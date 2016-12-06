@@ -1,0 +1,22 @@
+/* General Styles */
+
+h1 {
+  text-align: center;
+}
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+}
+
+
+td {
+	border: 1px solid black;
+	padding: 10px 15px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 10px 15px;
+}
