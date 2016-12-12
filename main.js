@@ -3,7 +3,7 @@ const ready = function() {
   // Loading
   const people = [
     { firstname: "Landry", surname: "O'Hara", adress:"St Andrews"},
-    { firstname: "Sharon", surname: "O'Neil", adress:"" },
+    { firstname: "Sharon", surname: "O'Neil", adress:"Glasgow" },
     { firstname: "Emerson", surname: "O'Connell", adress:"Edinburgh" },
     { firstname: "Roberto", surname: "O'Maley", adress:"Dublin" }
   ];
@@ -14,7 +14,7 @@ const ready = function() {
 
   for(let i = 0; i < people.length; i++) {
     let tr = document.createElement("tr");
-    tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td>`;
+    tr.innerHTML = `<td>${people[i].firstname}</td><td>${people[i].surname}</td><td>${people[i].adress}</td>`;
       trContainer.appendChild(tr);
   }
 
@@ -28,21 +28,11 @@ const ready = function() {
 
       if (inputp.value && inputn.value && inputa.value) {
           tr = document.createElement('tr');
+          tr.innerHTML = `<td>${inputp.value}</td><td>${inputn.value}</td><td>${inputa.value}</td>`;
           tbody.appendChild(tr);
 
-          td = document.createElement('td');
-          td.innerHTML = inputp.value;
-          tr.appendChild(td);
           inputp.value = '';
-
-          td = document.createElement('td');
-          td.innerHTML = inputn.value;
-          tr.appendChild(td);
           inputn.value = '';
-
-          td = document.createElement('td');
-          td.innerHTML = inputa.value;
-          tr.appendChild(td);
           inputa.value = '';
       }
       else {
