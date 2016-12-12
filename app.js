@@ -32,7 +32,7 @@ const ready = function() {
 }
 document.addEventListener("DOMContentLoaded", ready);*/
 //ETAPE 2: FAIRE 2 COLONNES ET AFFICHER PRENOMS + NOMS DU TABLEAU PEOPLE
-const ready = function() {
+/*const ready = function() {
   const people=[
     { firstname : "Landry", surname : "O'Hara"},
     { firstname : "Sharon", surname : "Dupont"},
@@ -56,4 +56,29 @@ const ready = function() {
         tbody.appendChild(tr); //on rattache tr à son parent (tbody)
     };
 }
+document.addEventListener("DOMContentLoaded", ready);*/
+
+const ready = function() {
+  // Loading
+  const people = [
+    { firstname: "Landry", surname: "O'Hara" },
+    { firstname: "Sharon", surname: "O'Neil" },
+    { firstname: "Emerson", surname: "O'Connell" },
+    { firstname: "Roberto", surname: "O'Maley" }
+  ];
+  //
+  const tbody = document.querySelector("tbody");
+
+  let trContainer = document.createDocumentFragment();
+
+  for(let i = 0; i < people.length; i++) {
+    let tr = document.createElement("tr");
+    tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td>`;
+      trContainer.appendChild(tr);
+  }
+
+  tbody.appendChild(trContainer);
+
+}
+
 document.addEventListener("DOMContentLoaded", ready);
