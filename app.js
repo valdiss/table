@@ -81,4 +81,8 @@ const ready = function() {
 
 }
 
+const getform = function () {
+  
+}
+
 document.addEventListener("DOMContentLoaded", ready);

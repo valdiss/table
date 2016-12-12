@@ -2,7 +2,15 @@
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+main {
+  margin:2%;
+}
+
+aside {
+  margin:2%;
 }
 
 h1 {
