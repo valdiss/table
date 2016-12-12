@@ -1,5 +1,6 @@
 table {
   border-collapse: collapse;
+  margin-bottom: 24px;
 }
 td, th {
   border: 1px solid #000;
@@ -7,4 +8,19 @@ td, th {
 
 th {
   background: #ddd;
+}
+
+label, input, button {
+  float: left;
+  margin-bottom: 6px;
+}
+
+label {
+  clear: left;
+  width: 80px;
+}
+
+button {
+  clear: left;
+  margin-left: 80px;
 }
