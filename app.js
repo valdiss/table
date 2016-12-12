@@ -10,12 +10,15 @@ const ready = function() {
   //
   const tbody = document.querySelector("tbody");
 
+  let trContainer = document.createDocumentFragment();
+
   for(let i = 0; i < people.length; i++) {
     let tr = document.createElement("tr");
     tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td>`;
-    tbody.appendChild(tr);
+      trContainer.appendChild(tr);
   }
 
+  tbody.appendChild(trContainer);
 
 }
 
