@@ -23,3 +23,7 @@ table td {
 table tbody tr td:first-child {
     font-weight: bold;
 }
+
+.form {
+    background-color: white;
+}
