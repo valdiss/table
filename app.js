@@ -13,14 +13,16 @@ app.models.people = {
   add: function(newPerson) {
     this.data.push(newPerson);
     app.views.redraw();
+    // stocker dans le localStorage
+    this.saveToStorage();
   },
-  // fake data to initialize example
-  data: [{
-    firstname: "Landry",
-    surname: "O'Hara",
-    age: 34,
-    height: 175
-  }]
+  saveToStorage: function() {
+    localStorage.setItem("peopleData", JSON.stringify(this.data));
+  },
+  loadFromStorage: function() {
+    this.data = JSON.parse(localStorage.getItem("peopleData"));
+  },
+  data: []
 };
 
 // app views
@@ -60,6 +62,7 @@ app.controllers.onSubmit = function(e) {
 const ready = function() {
   // TODO charger app.people depuis le localStorage
   // Initial drawing
+  app.models.people.loadFromStorage();
   app.views.redraw();
   // On form submit
   document.getElementById("add-person").addEventListener("submit", app.controllers.onSubmit);
