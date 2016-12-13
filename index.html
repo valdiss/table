@@ -2,40 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tableau Javascript</title>
-    <link rel="stylesheet" href="simplonstrap.css">
-    <link rel="stylesheet" href="master.css">
+    <title>table</title>
+    <link rel="stylesheet" href="master.css"title="no title" charset="utf-8">
   </head>
   <body>
-    <table class="table">
-        <thead>
+    <h1>Exercices d'auto génération de DOM via JS </h1>
+    <div class="container">
+      <main>
+        <h2>un tableau</h2>
+        <table>
+          <thead>
             <tr>
-                <th>
-                    Prénom
-                </th>
-                <th>
-                    Nom
-                </th>
-                <th>
-                    Adresse
-                </th>
+              <th>
+                Prénom
+              </th>
+              <th>
+                Nom
+              </th>
+              <th>
+                Age
+              </th>
+              <th>
+                Taille
+              </th>
             </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-    <form class="form" action="index.html" method="post">
-      <fieldset>
-        <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text" name="name" value="" placeholder="ex: Jano">
-        <label for="nom">Nom :</label>
-        <input id="nom" type="text" name="name" value="" placeholder="ex: Lapin">
-        <label for="adress">Adresse :</label>
-        <input id="adress" type="text" name="name" value="" placeholder="ex: Wonderland">
-      </fieldset>
-      <button id="valider" class="btn vld" type="button" name="button">Valider</button>
-      <button id="annuler" class="btn anl" type="button" name="button">Supprimer la dernière ligne</button>
-    </form>
-    <script src="main.js"></script>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </main>
+      <aside class="">
+        <h2>Un formulaire</h2>
+        <form id="form" action="index.html" method="post">
+          <input type="text" name="name" value="" placeholder="Nom">
+          <input type="text" name="firstname" value="" placeholder="Prénom">
+          <input type="email" name="email" value="" placeholder="Email">
+          <input type="submit" name="submit" value="Envoyer">
+        </form>
+      </aside>
+
+
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
