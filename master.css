@@ -1,13 +1,3 @@
-table {
-    background: #EEEEEE;
-    border-collapse: collapse;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-    font-size: 0.9em;
-    margin: auto;
-    text-align: left;
-    width: 80%;
-}
-
 table th {
     background: linear-gradient(#777, #444);
     color: #fff;
@@ -26,4 +16,19 @@ table tbody tr td:first-child {
 
 .form {
     background-color: white;
+}
+
+label, input, button {
+  float: left;
+  margin-bottom: 6px;
+}
+
+label {
+  clear: left;
+  width: 80px;
+}
+
+button {
+  clear: left;
+  margin-left: 80px;
 }

@@ -2,48 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>table</title>
-    <link rel="stylesheet" href="master.css"title="no title" charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <h1>Exercices d'auto génération de DOM via JS </h1>
-    <div class="container">
-      <main>
-        <h2>un tableau</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                Prénom
-              </th>
-              <th>
-                Nom
-              </th>
-              <th>
-                Age
-              </th>
-              <th>
-                Taille
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-        </table>
-      </main>
-      <aside class="">
-        <h2>Un formulaire</h2>
-        <form id="form" action="index.html" method="post">
-          <input type="text" name="name" value="" placeholder="Nom">
-          <input type="text" name="firstname" value="" placeholder="Prénom">
-          <input type="email" name="email" value="" placeholder="Email">
-          <input type="submit" name="submit" value="Envoyer">
-        </form>
-      </aside>
-
-
-    </div>
-
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Nom
+          </th>
+          <th>
+            Prénom
+          </th>
+          <th>
+            Âge
+          </th>
+          <th>
+            Taille
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <form id="add-person">
+      <label for="surname">Nom</label><input type="text" id="surname" name="surname"/>
+      <label for="firstname">Prénom</label><input type="text" id="firstname" name="firstname"/>
+      <label for="age">Âge</label><input type="number" id="age" name="age"/>
+      <label for="height">Taille</label><input type="number" id="height" name="height"/>
+      <button type="submit">Ajouter</button>
+    </form>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
